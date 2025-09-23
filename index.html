@@ -1,46 +1,52 @@
 <!DOCTYPE html>
 <html lang="fr">
 <head>
-  <meta charset="UTF-8" />
-  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <title>Hypesteps - Accueil</title>
-  <link rel="stylesheet" href="style.css" />
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Hypesteps</title>
+  <link rel="stylesheet" href="style.css">
 </head>
 <body>
-  <!-- HEADER -->
+  <!-- Header -->
   <header class="header">
     <div class="logo">HYPESTEPS</div>
+    <input type="text" placeholder="Rechercher un produit..." class="search-bar">
     <nav class="nav">
-      <input type="text" placeholder="Rechercher un produit..." class="search" />
-      <a href="#">Connexion</a>
-      <a href="#">Inscription</a>
-      <a href="#" class="cart">🛒</a>
+      <button class="btn black-btn">Connexion</button>
+      <button class="btn black-btn">Inscription</button>
+      <span class="cart">🛒</span>
     </nav>
   </header>
 
-  <!-- HERO -->
+  <!-- Hero -->
   <section class="hero">
     <h1>Bienvenue sur Hypesteps 👟</h1>
     <p>Running, lifestyle, basket, rando. Découvre nos marques et catégories.</p>
   </section>
 
-  <!-- FILTRES -->
+  <!-- Filtres marques -->
   <section class="filters">
-    <div class="filter-categories" id="categories"></div>
-    <div class="filter-brands" id="brands"></div>
+    <div id="brand-filters" class="filter-container"></div>
   </section>
 
-  <!-- PRODUITS -->
-  <main class="products" id="products"></main>
+  <!-- Produits -->
+  <main class="products">
+    <div class="product-card">
+      <img src="https://via.placeholder.com/150" alt="Adidas Ultraboost">
+      <h3>Adidas Ultraboost</h3>
+      <p class="price">150 €</p>
+      <p class="meta">Adidas</p>
+    </div>
+  </main>
 
-  <!-- FOOTER -->
+  <!-- Footer -->
   <footer class="footer">
     <p>© 2025 Hypesteps — Tous droits réservés.</p>
-    <nav>
+    <div class="footer-links">
       <a href="#">CGV</a>
       <a href="#">Confidentialité</a>
       <a href="#">Contact</a>
-    </nav>
+    </div>
   </footer>
 
   <script src="script.js"></script>
