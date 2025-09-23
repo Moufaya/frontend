@@ -1,130 +1,38 @@
-/* Reset */
-* {
-  margin: 0;
-  padding: 0;
-  box-sizing: border-box;
-  font-family: "Segoe UI", sans-serif;
-}
-
-body {
-  background: #f9fafb;
-  color: #333;
-}
-
-/* Header */
-.header {
-  background: #fff;
-  display: flex;
-  justify-content: space-between;
-  padding: 1rem 2rem;
-  border-bottom: 1px solid #eee;
-  align-items: center;
-}
-
-.logo {
-  font-size: 1.5rem;
-  font-weight: bold;
-}
-
-.nav {
-  display: flex;
-  align-items: center;
-  gap: 1rem;
-}
-
-.search {
-  padding: 0.5rem 1rem;
-  border: 1px solid #ddd;
+/* Boutons noirs */
+.btn.black-btn {
+  background: black;
+  color: white;
+  border: none;
+  padding: 8px 16px;
+  margin-left: 10px;
   border-radius: 6px;
-}
-
-/* Hero */
-.hero {
-  text-align: center;
-  padding: 2rem;
-  background: #eef2ff;
-}
-
-.hero h1 {
-  font-size: 2rem;
-  margin-bottom: 0.5rem;
-}
-
-/* Filters */
-.filters {
-  padding: 1rem 2rem;
-  display: flex;
-  justify-content: space-between;
-  gap: 1rem;
-  flex-wrap: wrap;
-}
-
-.filters button {
-  padding: 0.4rem 0.8rem;
-  border: 1px solid #ccc;
-  border-radius: 20px;
-  background: #fff;
   cursor: pointer;
-  transition: all 0.2s;
-}
-
-.filters button:hover {
-  background: #ddd;
-}
-
-/* Products */
-.products {
-  display: grid;
-  grid-template-columns: repeat(auto-fill, minmax(220px, 1fr));
-  gap: 1.5rem;
-  padding: 2rem;
-}
-
-.product-card {
-  background: #fff;
-  border-radius: 12px;
-  overflow: hidden;
-  box-shadow: 0 2px 8px rgba(0,0,0,0.05);
-  transition: transform 0.2s;
-}
-
-.product-card:hover {
-  transform: translateY(-5px);
-}
-
-.product-card img {
-  width: 100%;
-  height: 180px;
-  object-fit: cover;
-}
-
-.product-card .info {
-  padding: 1rem;
-}
-
-.product-card h3 {
-  font-size: 1.1rem;
-  margin-bottom: 0.5rem;
-}
-
-.product-card p {
-  color: #555;
-}
-
-.price {
   font-weight: bold;
-  color: #2563eb;
 }
 
-/* Footer */
-.footer {
-  background: #111;
-  color: #eee;
-  padding: 1rem 2rem;
-  display: flex;
-  justify-content: space-between;
+.btn.black-btn:hover {
+  background: #333;
 }
-.footer a {
-  color: #aaa;
-  margin-left: 1rem;
+
+/* Filtres marques */
+.filter-container {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 10px;
+  margin: 20px;
+}
+
+.filter-container button {
+  border: 1px solid #ddd;
+  background: white;
+  padding: 6px 14px;
+  border-radius: 20px;
+  cursor: pointer;
+  font-size: 14px;
+  transition: 0.3s;
+}
+
+.filter-container button:hover {
+  background: black;
+  color: white;
 }
